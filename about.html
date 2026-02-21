@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About Noam Elisha — Software Engineer, builder, and problem solver." />
+  <meta name="description" content="About Noam Elisha — UC Berkeley M.S. engineer specializing in ML, Data Science, and Backend Development." />
   <title>About — Noam Elisha</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
@@ -23,7 +23,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="mailto:noam@noamelisha.com" class="nav-cta">Hire Me</a></li>
+        <li><a href="mailto:noam.elisha@berkeley.edu" class="nav-cta">Hire Me</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -36,7 +36,7 @@
     <a href="index.html" onclick="closeMobileNav()">Home</a>
     <a href="about.html" onclick="closeMobileNav()">About</a>
     <a href="projects.html" onclick="closeMobileNav()">Projects</a>
-    <a href="mailto:noam@noamelisha.com" onclick="closeMobileNav()">Contact</a>
+    <a href="mailto:noam.elisha@berkeley.edu" onclick="closeMobileNav()">Contact</a>
   </div>
 
   <!-- ====== ABOUT HERO ====== -->
@@ -61,10 +61,10 @@
             👨‍💻
           </div>
           <div class="about-chip chip-1">
-            <span>⚡</span> Full-Stack Dev
+            <span>🎓</span> UC Berkeley
           </div>
           <div class="about-chip chip-2">
-            <span>📍</span> Israel
+            <span>📍</span> US Citizen
           </div>
         </div>
 
@@ -73,30 +73,32 @@
           <h2 class="reveal">Hi, I'm <span class="gradient-text">Noam Elisha</span></h2>
 
           <p class="reveal reveal-delay-1">
-            I'm a <span class="highlight">Software Engineer</span> with a passion for building products that make a real difference. I thrive at the intersection of engineering and design — writing code that's not just functional, but elegant and maintainable.
+            I'm a <span class="highlight">Software Engineer</span> with a UC Berkeley M.S. in Industrial Engineering &amp; Operations Research, focused on Data Science and Machine Learning. I also hold B.S. degrees in Electrical Engineering &amp; Computer Science and Industrial Engineering, plus a B.A. in Music.
           </p>
 
           <p class="reveal reveal-delay-2">
-            I've been building software for over 3 years, working across the full stack — from crafting pixel-perfect React interfaces to engineering robust APIs and cloud infrastructure. Whether it's a startup MVP or a production-grade system, I bring the same level of care and craft.
+            I've worked across data engineering, backend systems, and ML — from building Snowflake data pipelines at <span class="highlight">Fetch Rewards</span>, to setting up the full AWS cloud environment at <span class="highlight">NHERI SimCenter</span>, to developing an I/O performance testing pipeline as an intern at <span class="highlight">Amazon Web Services</span>.
           </p>
 
           <p class="reveal reveal-delay-3">
-            When I'm not coding, I'm exploring new technologies, contributing to open source, or thinking about how software can solve meaningful problems. I believe the best code is the kind that empowers people.
+            I specialize in turning complex data and systems problems into clean, efficient solutions — whether that's training a neural network, optimizing a data model, or building CI/CD infrastructure from scratch.
           </p>
 
           <div class="tech-grid reveal" style="margin-top:2rem;">
-            <span class="tech-badge">⚛️ React</span>
-            <span class="tech-badge">🔷 TypeScript</span>
-            <span class="tech-badge">🟢 Node.js</span>
             <span class="tech-badge">🐍 Python</span>
-            <span class="tech-badge">🐘 PostgreSQL</span>
-            <span class="tech-badge">🍃 MongoDB</span>
+            <span class="tech-badge">🔥 PyTorch</span>
+            <span class="tech-badge">🗄️ SQL</span>
+            <span class="tech-badge">❄️ Snowflake</span>
+            <span class="tech-badge">🔧 dbt</span>
+            <span class="tech-badge">☕ Java</span>
+            <span class="tech-badge">⚡ C++</span>
             <span class="tech-badge">☁️ AWS</span>
             <span class="tech-badge">🐳 Docker</span>
-            <span class="tech-badge">▲ Next.js</span>
-            <span class="tech-badge">🔴 Redis</span>
             <span class="tech-badge">🐙 Git</span>
-            <span class="tech-badge">⚡ GraphQL</span>
+            <span class="tech-badge">🐧 Linux</span>
+            <span class="tech-badge">📱 Android</span>
+            <span class="tech-badge">🎮 Unity</span>
+            <span class="tech-badge">🤖 C#</span>
           </div>
         </div>
       </div>
@@ -108,33 +110,42 @@
     <div class="container">
       <div class="section-label reveal">Career</div>
       <h2 class="section-title reveal">Experience</h2>
-      <p class="section-subtitle reveal">Where I've worked and what I've built along the way.</p>
+      <p class="section-subtitle reveal">Four companies, from startup to big tech — always building things that matter.</p>
 
       <div class="timeline">
         <div class="timeline-item reveal">
-          <div class="timeline-date">2023 — Present</div>
-          <div class="timeline-title">Software Engineer</div>
-          <div class="timeline-company">Tech Startup · Full-Time</div>
+          <div class="timeline-date">Mar 2025 — Jul 2025 · Remote</div>
+          <div class="timeline-title">Analytics Engineer</div>
+          <div class="timeline-company">Fetch Rewards</div>
           <div class="timeline-desc">
-            Lead development of customer-facing web applications using React and TypeScript. Architected backend services with Node.js and PostgreSQL. Implemented CI/CD pipelines that reduced deployment time by 60%. Mentored junior developers and led weekly code reviews.
+            Worked on Fetch's product catalog data infrastructure using SQL, Python, dbt, and Snowflake. Built a Slowly Changing Dimension (SCD) table to track catalog changes, created Grafana dashboards for catalog metrics (match rates, fidelity, completion), translated Go barcode conversion logic into Python Snowflake UDFs, and diagnosed faulty incremental logic in a 20M-row dbt model.
           </div>
         </div>
 
         <div class="timeline-item reveal">
-          <div class="timeline-date">2022 — 2023</div>
-          <div class="timeline-title">Junior Full-Stack Developer</div>
-          <div class="timeline-company">Software Agency · Full-Time</div>
+          <div class="timeline-date">Jun 2023 — Dec 2024 · Berkeley, CA</div>
+          <div class="timeline-title">Software Developer</div>
+          <div class="timeline-company">NHERI SimCenter</div>
           <div class="timeline-desc">
-            Built and maintained web applications for multiple clients across various industries. Worked with React, Vue.js, and Python/Django. Collaborated closely with designers to implement pixel-perfect UIs. Gained experience in Agile/Scrum workflows.
+            Set up and managed the team's entire AWS environment for large-scale structural engineering simulations. Implemented CI/CD nightly builds via GitHub Actions, built Docker images for Qt/C++ SimCenter apps deployable on DesignSafe remote servers, overhauled the HPC job scheduling interface in C++, and migrated Google Analytics from UA to GA4 to secure NSF funding. Collaborated to investigate and correct a 100K+ building Atlantic County dataset using Python, Google Geocoding API, and multiple government data sources.
           </div>
         </div>
 
         <div class="timeline-item reveal">
-          <div class="timeline-date">2021 — 2022</div>
-          <div class="timeline-title">Freelance Developer</div>
-          <div class="timeline-company">Self-Employed</div>
+          <div class="timeline-date">Aug 2021 — Jun 2023 · Irwindale, CA</div>
+          <div class="timeline-title">Software Developer</div>
+          <div class="timeline-company">Business Needs Inc.</div>
           <div class="timeline-desc">
-            Delivered custom web solutions for small businesses and entrepreneurs. Specialized in e-commerce integrations and responsive web design. Built strong client communication and project management skills.
+            Built integration modules for academic scheduling software, automating data feeds from universities and schools. Designed and delivered personalized dashboards for university deans, department chairs, and instructors. Also developed telemetric dashboards for fleet management, configurable to individual client business needs.
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Jun 2021 — Aug 2021 · Remote</div>
+          <div class="timeline-title">Software Development Engineering Intern</div>
+          <div class="timeline-company">Amazon Web Services</div>
+          <div class="timeline-desc">
+            Built an AWS Pipeline to automate I/O performance testing for new NVMe storage driver releases, comparing performance across versions. Pipeline outputs data as interactive graphs in AWS Quicksight. Created the full database schema to store DISKSPD benchmark results. Results were used directly by the team to verify driver performance before customer-facing releases.
           </div>
         </div>
       </div>
@@ -145,15 +156,43 @@
   <section class="section">
     <div class="container">
       <div class="section-label reveal">Education</div>
-      <h2 class="section-title reveal">Academic Background</h2>
+      <h2 class="section-title reveal">UC Berkeley</h2>
+      <p class="section-subtitle reveal">Four degrees from one of the world's top engineering schools.</p>
 
       <div class="timeline">
         <div class="timeline-item reveal">
-          <div class="timeline-date">2019 — 2023</div>
-          <div class="timeline-title">B.Sc. Computer Science</div>
-          <div class="timeline-company">University · Israel</div>
+          <div class="timeline-date">Graduate</div>
+          <div class="timeline-title">M.S. Industrial Engineering &amp; Operations Research</div>
+          <div class="timeline-company">Data Science &amp; Machine Learning Focus · UC Berkeley</div>
           <div class="timeline-desc">
-            Core studies in algorithms, data structures, operating systems, computer networks, and software engineering. Graduated with honors. Final project: a distributed task-scheduling system for cloud environments.
+            M.S. Capstone: EV Charging and Driving Behavior Analysis, Forecasting, and Optimization — in partnership with General Motors. Used ONSTAR driving data to model driver/charger behavior, generate synthetic data, analyze grid impact, and optimize highway charger placement.
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Undergraduate</div>
+          <div class="timeline-title">B.S. Electrical Engineering &amp; Computer Science</div>
+          <div class="timeline-company">UC Berkeley · EECS</div>
+          <div class="timeline-desc">
+            Coursework: Data Science, Machine Learning &amp; AI, Optimization and Algorithms, Statistics and Simulation. B.S. Capstone: Anomaly Detection in Catheter Production Line — in partnership with Biosense Webster, identifying root causes of faulty catheters using environmental and behavioral data.
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Undergraduate</div>
+          <div class="timeline-title">B.S. Industrial Engineering &amp; Operations Research</div>
+          <div class="timeline-company">UC Berkeley · IEOR</div>
+          <div class="timeline-desc">
+            Member of Alpha Pi Mu, the Industrial Engineering Honor Society.
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Undergraduate</div>
+          <div class="timeline-title">B.A. Music</div>
+          <div class="timeline-company">UC Berkeley · College of Letters &amp; Science</div>
+          <div class="timeline-desc">
+            Conductor and Concertmaster of the UC Berkeley Philharmonia Orchestra and Summer Symphony. Assistant Conductor of the UC Berkeley Symphony Orchestra.
           </div>
         </div>
       </div>
@@ -164,41 +203,41 @@
   <section class="section" style="padding-top: 0;">
     <div class="container">
       <div class="section-label reveal">Beyond Code</div>
-      <h2 class="section-title reveal">Interests &amp; Values</h2>
+      <h2 class="section-title reveal">Interests &amp; Passions</h2>
       <p class="section-subtitle reveal">The things that drive me, inside and outside of work.</p>
 
       <div class="values-grid">
         <div class="value-card reveal">
-          <div class="value-icon">🏗️</div>
-          <div class="value-title">Clean Architecture</div>
+          <div class="value-icon">🤖</div>
+          <div class="value-title">Machine Learning</div>
+        </div>
+        <div class="value-card reveal reveal-delay-1">
+          <div class="value-icon">🎵</div>
+          <div class="value-title">Conducting &amp; Music</div>
+        </div>
+        <div class="value-card reveal reveal-delay-2">
+          <div class="value-icon">☁️</div>
+          <div class="value-title">Cloud Systems</div>
+        </div>
+        <div class="value-card reveal reveal-delay-3">
+          <div class="value-icon">🎮</div>
+          <div class="value-title">Game AI</div>
+        </div>
+        <div class="value-card reveal">
+          <div class="value-icon">📊</div>
+          <div class="value-title">Data Science</div>
         </div>
         <div class="value-card reveal reveal-delay-1">
           <div class="value-icon">🌍</div>
           <div class="value-title">Open Source</div>
         </div>
         <div class="value-card reveal reveal-delay-2">
-          <div class="value-icon">📚</div>
-          <div class="value-title">Lifelong Learning</div>
+          <div class="value-icon">🚗</div>
+          <div class="value-title">EV &amp; Clean Energy</div>
         </div>
         <div class="value-card reveal reveal-delay-3">
-          <div class="value-icon">🎮</div>
-          <div class="value-title">Game Dev</div>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-icon">🎵</div>
-          <div class="value-title">Music</div>
-        </div>
-        <div class="value-card reveal reveal-delay-1">
-          <div class="value-icon">🏃</div>
-          <div class="value-title">Running</div>
-        </div>
-        <div class="value-card reveal reveal-delay-2">
-          <div class="value-icon">✈️</div>
-          <div class="value-title">Travel</div>
-        </div>
-        <div class="value-card reveal reveal-delay-3">
-          <div class="value-icon">🤝</div>
-          <div class="value-title">Mentorship</div>
+          <div class="value-icon">🎲</div>
+          <div class="value-title">Board Games</div>
         </div>
       </div>
     </div>
@@ -210,9 +249,9 @@
       <div class="cta-box reveal">
         <div class="section-label" style="justify-content:center; margin-bottom:1.5rem;">Let's Connect</div>
         <h2>Ready to work <span class="gradient-text">together?</span></h2>
-        <p>Whether you have a project in mind or just want to chat — my inbox is always open.</p>
+        <p>Whether you have a project in mind or just want to chat about ML and tech — my inbox is always open.</p>
         <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-          <a href="mailto:noam@noamelisha.com" class="btn btn-primary">
+          <a href="mailto:noam.elisha@berkeley.edu" class="btn btn-primary">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             Get In Touch
           </a>
@@ -228,13 +267,13 @@
       <span class="footer-logo">Noam Elisha</span>
       <span class="footer-copy">© 2025 Noam Elisha. Built with care.</span>
       <div class="footer-socials">
-        <a href="https://github.com/Noam-Elisha" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+        <a href="https://github.com/noam-elisha" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
         </a>
         <a href="https://linkedin.com/in/noam-elisha" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
         </a>
-        <a href="mailto:noam@noamelisha.com" class="social-link" aria-label="Email">
+        <a href="mailto:noam.elisha@berkeley.edu" class="social-link" aria-label="Email">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
       </div>
