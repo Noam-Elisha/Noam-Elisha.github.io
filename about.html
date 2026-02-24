@@ -3,27 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About Noam Elisha — UC Berkeley M.S. engineer specializing in ML, Data Science, and Backend Development." />
+  <meta name="description" content="About Noam Elisha — Software Designer with a UC Berkeley M.S., focused on ML, data, and thoughtful systems design." />
   <title>About — Noam Elisha</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>" />
 </head>
 <body>
 
-  <!-- Ambient Glow -->
-  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
-  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
-  <div class="bg-glow bg-glow-3" aria-hidden="true"></div>
-
   <!-- ====== NAVBAR ====== -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">NE</a>
+      <a href="index.html" class="nav-logo">Noam Elisha</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="mailto:noam.elisha@berkeley.edu" class="nav-cta">Hire Me</a></li>
+        <li><a href="mailto:noam.elisha@berkeley.edu" class="nav-cta">Get in Touch</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -42,10 +37,9 @@
   <!-- ====== ABOUT HERO ====== -->
   <section class="about-hero">
     <div class="container">
-      <div class="section-label reveal" style="margin-bottom:1.5rem;">About Me</div>
-      <h1 class="reveal" style="margin-bottom:1.5rem;">
-        The person behind<br>
-        <span class="gradient-text">the code</span>
+      <div class="section-label reveal" style="margin-bottom:1.25rem;">About</div>
+      <h1 class="reveal" style="margin-bottom:1.25rem;">
+        A bit about me
       </h1>
     </div>
   </section>
@@ -70,35 +64,35 @@
 
         <!-- Text Column -->
         <div class="about-text">
-          <h2 class="reveal">Hi, I'm <span class="gradient-text">Noam Elisha</span></h2>
+          <h2 class="reveal">Hi, I'm <span class="accent-text">Noam</span></h2>
 
           <p class="reveal reveal-delay-1">
-            I'm a <span class="highlight">Software Engineer</span> with a UC Berkeley M.S. in Industrial Engineering &amp; Operations Research, focused on Data Science and Machine Learning. I also hold B.S. degrees in Electrical Engineering &amp; Computer Science and Industrial Engineering, plus a B.A. in Music.
+            I'm a <span class="highlight">Software Designer</span> — I like that title because I think good software starts with good design thinking, not just good code. I have a UC Berkeley M.S. in Industrial Engineering &amp; Operations Research (focused on Data Science and ML), plus B.S. degrees in EECS and Industrial Engineering, and a B.A. in Music.
           </p>
 
           <p class="reveal reveal-delay-2">
-            I've worked across data engineering, backend systems, and ML — from building Snowflake data pipelines at <span class="highlight">Fetch Rewards</span>, to setting up the full AWS cloud environment at <span class="highlight">NHERI SimCenter</span>, to developing an I/O performance testing pipeline as an intern at <span class="highlight">Amazon Web Services</span>.
+            I've worked at <span class="highlight">Fetch Rewards</span> (building data pipelines in Snowflake and dbt), <span class="highlight">NHERI SimCenter</span> (setting up their full AWS cloud environment), and <span class="highlight">Amazon Web Services</span> (building an I/O performance testing pipeline). Each role taught me something different about what makes software work well for the people using it.
           </p>
 
           <p class="reveal reveal-delay-3">
-            I specialize in turning complex data and systems problems into clean, efficient solutions — whether that's training a neural network, optimizing a data model, or building CI/CD infrastructure from scratch.
+            I care about designing clean solutions to complex problems — whether that's a data model, an ML pipeline, or a piece of infrastructure that someone else will maintain after me.
           </p>
 
-          <div class="tech-grid reveal" style="margin-top:2rem;">
-            <span class="tech-badge">🐍 Python</span>
-            <span class="tech-badge">🔥 PyTorch</span>
-            <span class="tech-badge">🗄️ SQL</span>
-            <span class="tech-badge">❄️ Snowflake</span>
-            <span class="tech-badge">🔧 dbt</span>
-            <span class="tech-badge">☕ Java</span>
-            <span class="tech-badge">⚡ C++</span>
-            <span class="tech-badge">☁️ AWS</span>
-            <span class="tech-badge">🐳 Docker</span>
-            <span class="tech-badge">🐙 Git</span>
-            <span class="tech-badge">🐧 Linux</span>
-            <span class="tech-badge">📱 Android</span>
-            <span class="tech-badge">🎮 Unity</span>
-            <span class="tech-badge">🤖 C#</span>
+          <div class="tech-grid reveal" style="margin-top:1.5rem;">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">PyTorch</span>
+            <span class="tech-badge">SQL</span>
+            <span class="tech-badge">Snowflake</span>
+            <span class="tech-badge">dbt</span>
+            <span class="tech-badge">Java</span>
+            <span class="tech-badge">C++</span>
+            <span class="tech-badge">AWS</span>
+            <span class="tech-badge">Docker</span>
+            <span class="tech-badge">Git</span>
+            <span class="tech-badge">Linux</span>
+            <span class="tech-badge">Android</span>
+            <span class="tech-badge">Unity</span>
+            <span class="tech-badge">C#</span>
           </div>
         </div>
       </div>
@@ -106,11 +100,11 @@
   </section>
 
   <!-- ====== EXPERIENCE TIMELINE ====== -->
-  <section class="section" style="background: rgba(15,20,34,0.5); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+  <section class="section" style="border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
     <div class="container">
       <div class="section-label reveal">Career</div>
       <h2 class="section-title reveal">Experience</h2>
-      <p class="section-subtitle reveal">Four companies, from startup to big tech — always building things that matter.</p>
+      <p class="section-subtitle reveal">Four companies, startup to big tech.</p>
 
       <div class="timeline">
         <div class="timeline-item reveal">
@@ -118,7 +112,7 @@
           <div class="timeline-title">Analytics Engineer</div>
           <div class="timeline-company">Fetch Rewards</div>
           <div class="timeline-desc">
-            Worked on Fetch's product catalog data infrastructure using SQL, Python, dbt, and Snowflake. Built a Slowly Changing Dimension (SCD) table to track catalog changes, created Grafana dashboards for catalog metrics (match rates, fidelity, completion), translated Go barcode conversion logic into Python Snowflake UDFs, and diagnosed faulty incremental logic in a 20M-row dbt model.
+            Worked on product catalog data infrastructure using SQL, Python, dbt, and Snowflake. Built an SCD table for tracking catalog changes, created Grafana dashboards for catalog metrics, translated Go barcode logic into Python Snowflake UDFs, and diagnosed faulty incremental logic in a 20M-row dbt model.
           </div>
         </div>
 
@@ -127,7 +121,7 @@
           <div class="timeline-title">Software Developer</div>
           <div class="timeline-company">NHERI SimCenter</div>
           <div class="timeline-desc">
-            Set up and managed the team's entire AWS environment for large-scale structural engineering simulations. Implemented CI/CD nightly builds via GitHub Actions, built Docker images for Qt/C++ SimCenter apps deployable on DesignSafe remote servers, overhauled the HPC job scheduling interface in C++, and migrated Google Analytics from UA to GA4 to secure NSF funding. Collaborated to investigate and correct a 100K+ building Atlantic County dataset using Python, Google Geocoding API, and multiple government data sources.
+            Set up and managed the team's entire AWS environment for large-scale structural engineering simulations. Built CI/CD nightly builds via GitHub Actions, created Docker images for Qt/C++ apps, overhauled the HPC job scheduling interface, and migrated Google Analytics from UA to GA4 to secure NSF funding.
           </div>
         </div>
 
@@ -136,7 +130,7 @@
           <div class="timeline-title">Software Developer</div>
           <div class="timeline-company">Business Needs Inc.</div>
           <div class="timeline-desc">
-            Built integration modules for academic scheduling software, automating data feeds from universities and schools. Designed and delivered personalized dashboards for university deans, department chairs, and instructors. Also developed telemetric dashboards for fleet management, configurable to individual client business needs.
+            Built integration modules for academic scheduling software, automating data feeds from universities. Designed dashboards for university deans and department chairs. Also built telemetric dashboards for fleet management clients.
           </div>
         </div>
 
@@ -145,7 +139,7 @@
           <div class="timeline-title">Software Development Engineering Intern</div>
           <div class="timeline-company">Amazon Web Services</div>
           <div class="timeline-desc">
-            Built an AWS Pipeline to automate I/O performance testing for new NVMe storage driver releases, comparing performance across versions. Pipeline outputs data as interactive graphs in AWS Quicksight. Created the full database schema to store DISKSPD benchmark results. Results were used directly by the team to verify driver performance before customer-facing releases.
+            Built an AWS pipeline to automate I/O performance testing for NVMe storage driver releases. Designed the database schema, created interactive Quicksight dashboards, and the results were used directly by the team to verify driver performance before customer releases.
           </div>
         </div>
       </div>
@@ -157,31 +151,31 @@
     <div class="container">
       <div class="section-label reveal">Education</div>
       <h2 class="section-title reveal">UC Berkeley</h2>
-      <p class="section-subtitle reveal">Four degrees from one of the world's top engineering schools.</p>
+      <p class="section-subtitle reveal">Four degrees. One school.</p>
 
       <div class="timeline">
         <div class="timeline-item reveal">
           <div class="timeline-date">Graduate</div>
           <div class="timeline-title">M.S. Industrial Engineering &amp; Operations Research</div>
-          <div class="timeline-company">Data Science &amp; Machine Learning Focus · UC Berkeley</div>
+          <div class="timeline-company">Data Science &amp; Machine Learning Focus</div>
           <div class="timeline-desc">
-            M.S. Capstone: EV Charging and Driving Behavior Analysis, Forecasting, and Optimization — in partnership with General Motors. Used ONSTAR driving data to model driver/charger behavior, generate synthetic data, analyze grid impact, and optimize highway charger placement.
+            Capstone with General Motors: modeled EV charging and driving behavior using ONSTAR data, generated synthetic datasets, analyzed grid impact, and optimized highway charger placement.
           </div>
         </div>
 
         <div class="timeline-item reveal">
           <div class="timeline-date">Undergraduate</div>
           <div class="timeline-title">B.S. Electrical Engineering &amp; Computer Science</div>
-          <div class="timeline-company">UC Berkeley · EECS</div>
+          <div class="timeline-company">UC Berkeley EECS</div>
           <div class="timeline-desc">
-            Coursework: Data Science, Machine Learning &amp; AI, Optimization and Algorithms, Statistics and Simulation. B.S. Capstone: Anomaly Detection in Catheter Production Line — in partnership with Biosense Webster, identifying root causes of faulty catheters using environmental and behavioral data.
+            Coursework in ML, AI, optimization, statistics, and simulation. Capstone with Biosense Webster: anomaly detection in catheter production lines using environmental and behavioral data.
           </div>
         </div>
 
         <div class="timeline-item reveal">
           <div class="timeline-date">Undergraduate</div>
           <div class="timeline-title">B.S. Industrial Engineering &amp; Operations Research</div>
-          <div class="timeline-company">UC Berkeley · IEOR</div>
+          <div class="timeline-company">UC Berkeley IEOR</div>
           <div class="timeline-desc">
             Member of Alpha Pi Mu, the Industrial Engineering Honor Society.
           </div>
@@ -190,9 +184,9 @@
         <div class="timeline-item reveal">
           <div class="timeline-date">Undergraduate</div>
           <div class="timeline-title">B.A. Music</div>
-          <div class="timeline-company">UC Berkeley · College of Letters &amp; Science</div>
+          <div class="timeline-company">UC Berkeley College of Letters &amp; Science</div>
           <div class="timeline-desc">
-            Conductor and Concertmaster of the UC Berkeley Philharmonia Orchestra and Summer Symphony. Assistant Conductor of the UC Berkeley Symphony Orchestra.
+            Conductor and Concertmaster of the UC Berkeley Philharmonia Orchestra. Assistant Conductor of the UC Berkeley Symphony Orchestra.
           </div>
         </div>
       </div>
@@ -202,9 +196,9 @@
   <!-- ====== VALUES / INTERESTS ====== -->
   <section class="section" style="padding-top: 0;">
     <div class="container">
-      <div class="section-label reveal">Beyond Code</div>
-      <h2 class="section-title reveal">Interests &amp; Passions</h2>
-      <p class="section-subtitle reveal">The things that drive me, inside and outside of work.</p>
+      <div class="section-label reveal">Outside Work</div>
+      <h2 class="section-title reveal">Interests</h2>
+      <p class="section-subtitle reveal">Things I care about beyond the day job.</p>
 
       <div class="values-grid">
         <div class="value-card reveal">
@@ -233,7 +227,7 @@
         </div>
         <div class="value-card reveal reveal-delay-2">
           <div class="value-icon">🚗</div>
-          <div class="value-title">EV &amp; Clean Energy</div>
+          <div class="value-title">EVs &amp; Clean Energy</div>
         </div>
         <div class="value-card reveal reveal-delay-3">
           <div class="value-icon">🎲</div>
@@ -247,15 +241,15 @@
   <section class="cta-section">
     <div class="container">
       <div class="cta-box reveal">
-        <div class="section-label" style="justify-content:center; margin-bottom:1.5rem;">Let's Connect</div>
-        <h2>Ready to work <span class="gradient-text">together?</span></h2>
-        <p>Whether you have a project in mind or just want to chat about ML and tech — my inbox is always open.</p>
-        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <div class="section-label" style="justify-content:center; margin-bottom:1.25rem;">Let's Connect</div>
+        <h2>Want to work together?</h2>
+        <p>Whether it's a project, a role, or just a conversation — I'd like to hear from you.</p>
+        <div style="display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;">
           <a href="mailto:noam.elisha@berkeley.edu" class="btn btn-primary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             Get In Touch
           </a>
-          <a href="projects.html" class="btn btn-secondary">View My Work</a>
+          <a href="projects.html" class="btn btn-secondary">See My Work</a>
         </div>
       </div>
     </div>
@@ -265,16 +259,16 @@
   <footer>
     <div class="footer-inner">
       <span class="footer-logo">Noam Elisha</span>
-      <span class="footer-copy">© 2025 Noam Elisha. Built with care.</span>
+      <span class="footer-copy">&copy; <span id="year"></span></span>
       <div class="footer-socials">
         <a href="https://github.com/noam-elisha" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
         </a>
         <a href="https://linkedin.com/in/noam-elisha" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
         </a>
         <a href="mailto:noam.elisha@berkeley.edu" class="social-link" aria-label="Email">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
       </div>
     </div>
