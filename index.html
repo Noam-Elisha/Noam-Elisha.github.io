@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Noam Elisha — Software Designer. I design and build thoughtful software, from ML systems to data pipelines." />
-  <title>Noam Elisha — Software Designer</title>
+  <meta name="description" content="Noam Elisha — Violinist, conductor, and private violin teacher in Berkeley, CA. Lessons for all levels." />
+  <title>Noam Elisha — Violinist &amp; Teacher</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎻</text></svg>" />
 </head>
 <body>
 
   <!-- ====== NAVBAR ====== -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">Noam Elisha</a>
+      <a href="#" class="nav-logo">Noam Elisha</a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="mailto:noam.elisha@berkeley.edu" class="nav-cta">Get in Touch</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#lessons">Lessons</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -28,249 +29,149 @@
 
   <!-- Mobile Nav -->
   <div class="mobile-nav" id="mobileNav">
-    <a href="index.html" onclick="closeMobileNav()">Home</a>
-    <a href="about.html" onclick="closeMobileNav()">About</a>
-    <a href="projects.html" onclick="closeMobileNav()">Projects</a>
-    <a href="mailto:noam.elisha@berkeley.edu" onclick="closeMobileNav()">Contact</a>
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#lessons" onclick="closeMobileNav()">Lessons</a>
+    <a href="#experience" onclick="closeMobileNav()">Experience</a>
+    <a href="#videos" onclick="closeMobileNav()">Videos</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
   </div>
 
-  <!-- ====== HERO ====== -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <div class="hero-badge">
-          <span class="dot"></span>
-          Available for work
-        </div>
-
-        <h1 class="hero-heading">
-          <span class="hero-name">Noam Elisha</span>
-          <span class="hero-title">Software Designer</span>
-        </h1>
-
-        <p class="hero-description">
-          I design software that makes sense. UC Berkeley M.S. grad with a background in ML, data systems, and backend development. I like turning messy problems into clean solutions.
-        </p>
-
-        <div class="hero-actions">
-          <a href="projects.html" class="btn btn-primary">
-            <span>See My Work</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-          <a href="about.html" class="btn btn-secondary">
-            <span>About Me</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Sidebar Cards -->
-      <div class="hero-visual" aria-hidden="true">
-        <div class="floating-card">
-          <div class="card-tag">Experience</div>
-          <div class="card-metric">4+ yrs</div>
-          <div class="card-desc">Fetch, SimCenter, AWS</div>
-        </div>
-        <div class="floating-card">
-          <div class="card-tag">Stack</div>
-          <div class="card-bars">
-            <div class="bar-item">
-              <span class="bar-label">Python</span>
-              <div class="bar-track"><div class="bar-fill" style="width:96%"></div></div>
-            </div>
-            <div class="bar-item">
-              <span class="bar-label">PyTorch</span>
-              <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
-            </div>
-            <div class="bar-item">
-              <span class="bar-label">AWS</span>
-              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
-            </div>
-            <div class="bar-item">
-              <span class="bar-label">SQL</span>
-              <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div>
-            </div>
-          </div>
-        </div>
-        <div class="floating-card">
-          <div class="card-tag">Projects</div>
-          <div class="card-metric">10+</div>
-          <div class="card-desc">ML, data, and tools</div>
+  <!-- ====== ABOUT ====== -->
+  <section id="about" style="padding-top: 7rem;">
+    <div class="container">
+      <div class="section-label">About</div>
+      <div class="about-section">
+        <div class="about-photo">🎻</div>
+        <div class="about-text">
+          <h2>Hi, I'm <span class="accent-text">Noam</span></h2>
+          <p class="reveal">
+            I'm a violinist and teacher based in Berkeley, California. I perform as a section violinist with the Sacramento Philharmonic &amp; Opera, and I teach private violin lessons to students of all ages and levels. Music has been at the center of my life for as long as I can remember, and I love sharing that with others.
+          </p>
+          <p class="reveal reveal-delay-1">
+            As a teacher, I'm patient, structured, and always adapting to each student's goals and learning style. Whether you're picking up the violin for the very first time or preparing for an audition, I believe music should be enjoyable at every stage. My lessons balance technique with expression, so you're always making progress while having fun.
+          </p>
+          <p class="reveal reveal-delay-2">
+            I received a fellowship to the Aspen Music Festival &amp; School and hold a B.A. in Music from UC Berkeley, where I served as conductor and concertmaster of the UC Berkeley Philharmonia Orchestra, assistant conductor of the UC Berkeley Symphony Orchestra, and was a finalist in the Cal Concerto Competition.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== STATS STRIP ====== -->
-  <div class="stats-strip">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item reveal">
-          <span class="stat-number" data-count="4">0</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat-item reveal reveal-delay-1">
-          <span class="stat-number" data-count="10">0</span>
-          <span class="stat-label">Projects Built</span>
-        </div>
-        <div class="stat-item reveal reveal-delay-2">
-          <span class="stat-number" data-count="4">0</span>
-          <span class="stat-label">Companies</span>
-        </div>
-        <div class="stat-item reveal reveal-delay-3">
-          <span class="stat-number" data-count="3">0</span>
-          <span class="stat-label">Degrees (UC Berkeley)</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- ====== LESSONS ====== -->
+  <section id="lessons">
+    <div class="section">
+      <div class="container">
+        <div class="section-label">Lessons</div>
+        <h2 class="section-title">Violin Lessons in Berkeley</h2>
+        <p class="section-subtitle">In-person and online lessons for students of all ages and levels.</p>
 
-  <!-- ====== SKILLS SECTION ====== -->
-  <section class="section">
-    <div class="container">
-      <div class="section-label reveal">What I Do</div>
-      <h2 class="section-title reveal">Areas of Focus</h2>
-      <p class="section-subtitle reveal">I work across the stack, but these are where I spend most of my time.</p>
-
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <div class="skill-icon">🤖</div>
-          <div class="skill-name">Machine Learning</div>
-          <div class="skill-desc">PyTorch, scikit-learn, CNNs, reinforcement learning. Research to production.</div>
-        </div>
-        <div class="skill-card reveal reveal-delay-1">
-          <div class="skill-icon">🗄️</div>
-          <div class="skill-name">Data Engineering</div>
-          <div class="skill-desc">SQL, dbt, Snowflake, Pandas. Pipelines that actually work.</div>
-        </div>
-        <div class="skill-card reveal reveal-delay-2">
-          <div class="skill-icon">⚙️</div>
-          <div class="skill-name">Backend Systems</div>
-          <div class="skill-desc">Python, Java, C++. Reliable, well-structured code.</div>
-        </div>
-        <div class="skill-card reveal reveal-delay-3">
-          <div class="skill-icon">☁️</div>
-          <div class="skill-name">Cloud & DevOps</div>
-          <div class="skill-desc">AWS, Docker, GitHub Actions. Infrastructure that stays up.</div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">📊</div>
-          <div class="skill-name">Data Analysis</div>
-          <div class="skill-desc">Grafana, Quicksight, statistical modeling, optimization.</div>
-        </div>
-        <div class="skill-card reveal reveal-delay-1">
-          <div class="skill-icon">📱</div>
-          <div class="skill-name">Apps & Tools</div>
-          <div class="skill-desc">Android, Unity, Qt/C++. Full applications from scratch.</div>
+        <div class="lessons-grid">
+          <div class="lesson-card reveal">
+            <div class="lesson-icon">🌱</div>
+            <div class="lesson-title">Beginners</div>
+            <div class="lesson-desc">Starting from scratch, building strong foundations — posture, bow hold, reading music, first pieces. Fun and encouraging.</div>
+          </div>
+          <div class="lesson-card reveal reveal-delay-1">
+            <div class="lesson-icon">🎵</div>
+            <div class="lesson-title">Intermediate &amp; Advanced</div>
+            <div class="lesson-desc">Refining technique, tackling harder repertoire, preparing for auditions or performances. Focused and goal-oriented.</div>
+          </div>
+          <div class="lesson-card reveal reveal-delay-2">
+            <div class="lesson-icon">🎶</div>
+            <div class="lesson-title">Adult Learners</div>
+            <div class="lesson-desc">Whether picking it up for the first time or coming back after years away. No pressure, just the joy of playing.</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== FEATURED PROJECTS ====== -->
-  <section class="section" style="padding-top: 0;">
-    <div class="container">
-      <div class="section-label reveal">Selected Work</div>
-      <h2 class="section-title reveal">Recent Projects</h2>
-      <p class="section-subtitle reveal">A few things I've designed and built recently.</p>
+  <!-- ====== EXPERIENCE ====== -->
+  <section id="experience">
+    <div class="section" style="border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-label">Background</div>
+        <h2 class="section-title">Performance &amp; Education</h2>
+        <p class="section-subtitle">Highlights from the stage and the classroom.</p>
 
-      <div class="featured-grid">
-        <!-- Project 1 -->
-        <div class="project-card reveal">
-          <div class="project-thumb purple-bg">🎵</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">ML</span>
-              <span class="tag">Spotify API</span>
-            </div>
-            <h3 class="project-title">Million Spotify Playlists</h3>
-            <p class="project-desc">Predicted playlist success across a 36 GB dataset of 20M songs. Designed a sequential cache for 10x faster data retrieval. 89% accuracy using ensemble methods.</p>
-            <div class="project-links">
-              <a href="projects.html" class="project-link">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Details
-              </a>
-              <a href="https://github.com/noam-elisha" target="_blank" rel="noopener noreferrer" class="project-link">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                GitHub
-              </a>
-            </div>
+        <div class="experience-grid">
+          <div class="exp-item reveal">
+            <div class="exp-role">Section Violin</div>
+            <div class="exp-org">Sacramento Philharmonic &amp; Opera</div>
+          </div>
+          <div class="exp-item reveal reveal-delay-1">
+            <div class="exp-role">Violin Fellowship</div>
+            <div class="exp-org">Aspen Music Festival &amp; School</div>
+          </div>
+          <div class="exp-item reveal reveal-delay-2">
+            <div class="exp-role">Conductor &amp; Concertmaster</div>
+            <div class="exp-org">UC Berkeley Philharmonia Orchestra</div>
+          </div>
+          <div class="exp-item reveal reveal-delay-3">
+            <div class="exp-role">Assistant Conductor</div>
+            <div class="exp-org">UC Berkeley Symphony Orchestra</div>
+          </div>
+          <div class="exp-item reveal">
+            <div class="exp-role">Concerto Competition Finalist</div>
+            <div class="exp-org">UC Berkeley Cal Performing</div>
+          </div>
+          <div class="exp-item reveal reveal-delay-1">
+            <div class="exp-role">B.A. Music</div>
+            <div class="exp-org">UC Berkeley</div>
+            <div class="exp-detail">College of Letters &amp; Science</div>
           </div>
         </div>
-
-        <!-- Project 2 -->
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-thumb cyan-bg">🌍</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">PyTorch</span>
-              <span class="tag">CNN</span>
-              <span class="tag">Google Cloud</span>
-            </div>
-            <h3 class="project-title">GeoGuessr AI</h3>
-            <p class="project-desc">CNN that identifies GPS coordinates from Street View images. Trained on 50K images collected through custom data mining. 85% accuracy on large coordinate bins.</p>
-            <div class="project-links">
-              <a href="projects.html" class="project-link">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Details
-              </a>
-              <a href="https://github.com/noam-elisha" target="_blank" rel="noopener noreferrer" class="project-link">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card reveal reveal-delay-2">
-          <div class="project-thumb green-bg">🤖</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Discord API</span>
-              <span class="tag">ChatGPT</span>
-            </div>
-            <h3 class="project-title">Gnomebot</h3>
-            <p class="project-desc">A Discord bot I've maintained for 4+ years. Uses GPT and DALL-E 3 for conversations and image generation. Tracks quotes, air quality, and more.</p>
-            <div class="project-links">
-              <a href="projects.html" class="project-link">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Details
-              </a>
-              <a href="https://github.com/noam-elisha" target="_blank" rel="noopener noreferrer" class="project-link">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div style="text-align:center; margin-top: 2.5rem;" class="reveal">
-        <a href="projects.html" class="btn btn-secondary">
-          All Projects
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </a>
       </div>
     </div>
   </section>
 
-  <!-- ====== CTA ====== -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-box reveal">
-        <div class="section-label" style="justify-content:center; margin-bottom:1.25rem;">Get In Touch</div>
-        <h2>Want to work together?</h2>
-        <p>I'm always interested in new projects and interesting problems. Let's talk.</p>
-        <div style="display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;">
+  <!-- ====== VIDEOS ====== -->
+  <section id="videos">
+    <div class="section">
+      <div class="container">
+        <div class="section-label">Watch</div>
+        <h2 class="section-title">Videos</h2>
+        <p class="section-subtitle">Performance videos coming soon.</p>
+
+        <div class="videos-grid">
+          <div class="video-placeholder reveal">
+            <div class="play-icon">&#9654;</div>
+          </div>
+          <div class="video-placeholder reveal reveal-delay-1">
+            <div class="play-icon">&#9654;</div>
+          </div>
+          <div class="video-placeholder reveal reveal-delay-2">
+            <div class="play-icon">&#9654;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact">
+    <div class="section" style="border-top: 1px solid var(--color-border);">
+      <div class="container contact-section">
+        <div class="section-label" style="justify-content: center;">Get in Touch</div>
+        <h2 class="section-title">Book a Lesson</h2>
+        <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">Interested in lessons or have a question? I'd love to hear from you.</p>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <span>📧</span>
+            <span><a href="mailto:noam.elisha@berkeley.edu">noam.elisha@berkeley.edu</a></span>
+          </div>
+          <div class="contact-item">
+            <span>📍</span>
+            <span>Berkeley, CA</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem;">
           <a href="mailto:noam.elisha@berkeley.edu" class="btn btn-primary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            Say Hello
-          </a>
-          <a href="https://github.com/noam-elisha" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            GitHub
+            Send Me a Message
           </a>
         </div>
       </div>
@@ -283,14 +184,14 @@
       <span class="footer-logo">Noam Elisha</span>
       <span class="footer-copy">&copy; <span id="year"></span></span>
       <div class="footer-socials">
-        <a href="https://github.com/noam-elisha" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        <a href="mailto:noam.elisha@berkeley.edu" class="social-link" aria-label="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
         <a href="https://linkedin.com/in/noam-elisha" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
         </a>
-        <a href="mailto:noam.elisha@berkeley.edu" class="social-link" aria-label="Email">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="https://instagram.com/noam.elisha" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
         </a>
       </div>
     </div>
