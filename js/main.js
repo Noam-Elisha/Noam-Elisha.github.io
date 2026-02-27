@@ -1,5 +1,5 @@
 /* =============================================
-   NOAM ELISHA — Main JavaScript
+   NOAM ELISHA — Music Site JavaScript
    ============================================= */
 
 // ── Dynamic copyright year ────────────────────
@@ -54,63 +54,3 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-// ── Animated counters ─────────────────────────
-function animateCounter(el, target, duration = 1200) {
-  let start = 0;
-  const step = target / (duration / 16);
-  const timer = setInterval(() => {
-    start += step;
-    if (start >= target) {
-      el.textContent = target + '+';
-      clearInterval(timer);
-    } else {
-      el.textContent = Math.floor(start) + '+';
-    }
-  }, 16);
-}
-
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const el = entry.target;
-      const target = parseInt(el.getAttribute('data-count'), 10);
-      animateCounter(el, target);
-      counterObserver.unobserve(el);
-    }
-  });
-}, { threshold: 0.5 });
-
-document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
-
-// ── Project filter (projects page) ───────────
-const filterBtns = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('#projectsGrid .project-card');
-
-if (filterBtns.length && projectCards.length) {
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.getAttribute('data-filter');
-
-      projectCards.forEach(card => {
-        const tags = card.getAttribute('data-tags') || '';
-        const show = filter === 'all' || tags.split(' ').includes(filter);
-        card.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
-        if (show) {
-          card.style.opacity = '1';
-          card.style.transform = '';
-          card.style.display = '';
-        } else {
-          card.style.opacity = '0';
-          card.style.transform = 'scale(0.97)';
-          setTimeout(() => {
-            if (card.style.opacity === '0') card.style.display = 'none';
-          }, 250);
-        }
-      });
-    });
-  });
-}
