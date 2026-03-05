@@ -491,6 +491,60 @@ a {
   color: var(--text-primary);
 }
 
+.contact-page {
+  min-height: calc(100vh - 140px);
+}
+
+.contact-form-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.contact-form label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 0.85rem;
+  font: inherit;
+  color: var(--text-primary);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-dim);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-form button {
+  margin-top: 0.6rem;
+  align-self: flex-start;
+}
+
 /* =============================================
    FOOTER
    ============================================= */
@@ -604,6 +658,14 @@ footer {
   .footer-inner {
     flex-direction: column;
     text-align: center;
+  }
+
+  .contact-form-wrap {
+    padding: 1.25rem;
+  }
+
+  .contact-form button {
+    align-self: stretch;
   }
 }
 
