@@ -54,3 +54,12 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// ── Contact form success message ─────────────
+if (window.location.search.includes('sent=1')) {
+  const formWrap = document.querySelector('.contact-form-wrap');
+  if (formWrap) {
+    formWrap.innerHTML = '<div class="contact-success"><h2>Message sent</h2><p>Thanks for reaching out. I\'ll get back to you soon.</p></div>';
+    history.replaceState(null, '', window.location.pathname);
+  }
+}

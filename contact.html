@@ -34,27 +34,34 @@
     <a href="contact.html" onclick="closeMobileNav()">Contact</a>
   </div>
 
-  <main class="contact-page">
+  <main>
     <section class="section" style="padding-top: 8rem;">
       <div class="container">
         <div class="section-label">Contact</div>
         <h1 class="section-title">Send a Message</h1>
-        <p class="section-subtitle">Use the form below to ask about lessons, scheduling, or anything else.</p>
+        <p class="section-subtitle">Have a question about lessons, scheduling, or anything else? I'd love to hear from you.</p>
 
         <div class="contact-form-wrap reveal">
           <form class="contact-form" action="https://formsubmit.co/el/miwili" method="POST">
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_subject" value="New Website Contact Form Submission" />
             <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://noamelisha.com/contact.html?sent=1" />
 
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required />
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
 
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="What would you like to talk about?" required></textarea>
+            </div>
 
             <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
