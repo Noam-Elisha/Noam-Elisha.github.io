@@ -83,6 +83,15 @@ const counterObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
 
+// ── Contact form success message ─────────────
+if (window.location.search.includes('sent=1')) {
+  const formWrap = document.querySelector('.contact-form-wrap');
+  if (formWrap) {
+    formWrap.innerHTML = '<div class="contact-success"><h2>Message sent</h2><p>Thanks for reaching out. I\'ll get back to you soon.</p></div>';
+    history.replaceState(null, '', window.location.pathname);
+  }
+}
+
 // ── Project filter (projects page) ───────────
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('#projectsGrid .project-card');

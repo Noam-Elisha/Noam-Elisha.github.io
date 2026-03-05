@@ -32,13 +32,13 @@
     <a href="contact.html" onclick="closeMobileNav()">Contact</a>
   </div>
 
-  <main class="contact-page">
+  <main>
     <section class="projects-hero">
       <div class="container">
         <div class="section-label reveal" style="margin-bottom:1.25rem;">Contact</div>
-        <h1 class="reveal" style="margin-bottom:1rem;">Send me a message</h1>
-        <p style="font-size:1.1rem; max-width:580px; color:var(--text-secondary);" class="reveal reveal-delay-1">
-          Use this form for project inquiries, job opportunities, or collaboration.
+        <h1 class="reveal" style="margin-bottom:1rem;">Get in touch</h1>
+        <p style="font-size:1.05rem; max-width:520px; color:var(--text-secondary);" class="reveal reveal-delay-1">
+          Have a project in mind, a question, or just want to say hello? I'd love to hear from you.
         </p>
       </div>
     </section>
@@ -50,15 +50,22 @@
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_subject" value="New Contact Submission from noamelisha.com" />
             <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://noamelisha.com/contact.html?sent=1" />
 
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required />
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
 
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="What would you like to talk about?" required></textarea>
+            </div>
 
             <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
