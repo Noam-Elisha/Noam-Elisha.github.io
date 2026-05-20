@@ -3,3 +3,6 @@ Thumbs.db
 *.log
 node_modules/
 .env
+
+# Throwaway design exploration mockups — see frontend-design-explorer skill
+.design-previews/

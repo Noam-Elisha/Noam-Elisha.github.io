@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Noam Elisha about software projects, roles, and collaboration." />
-  <title>Contact - Noam Elisha</title>
+  <meta name="description" content="Write back to Noam Elisha — Software Designer, Berkeley." />
+  <title>Write Back — Noam Elisha</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>" />
 </head>
 <body>
 
+  <!-- ====== LETTERHEAD ====== -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">Noam Elisha</a>
+      <div class="nav-role">Software Designer · San Rafael, CA</div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="nav-cta active">Get in Touch</a></li>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">resume ↗</a></li>
+        <li><a href="contact.html" class="nav-cta active">write back</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -25,55 +28,68 @@
     </div>
   </nav>
 
+  <!-- Mobile Nav -->
   <div class="mobile-nav" id="mobileNav">
-    <a href="index.html" onclick="closeMobileNav()">Home</a>
-    <a href="about.html" onclick="closeMobileNav()">About</a>
-    <a href="projects.html" onclick="closeMobileNav()">Projects</a>
-    <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+    <a href="index.html" onclick="closeMobileNav()">home</a>
+    <a href="about.html" onclick="closeMobileNav()">about</a>
+    <a href="projects.html" onclick="closeMobileNav()">projects</a>
+    <a href="resume.pdf" target="_blank" rel="noopener noreferrer">resume ↗</a>
+    <a href="contact.html" onclick="closeMobileNav()">write back</a>
+  </div>
+
+  <!-- ====== LETTER META ====== -->
+  <div class="letter-meta">
+    <span data-letter-date="San Rafael"></span>
   </div>
 
   <main>
-    <section class="projects-hero">
-      <div class="container">
-        <div class="section-label reveal" style="margin-bottom:1.25rem;">Contact</div>
-        <h1 class="reveal" style="margin-bottom:1rem;">Get in touch</h1>
-        <p style="font-size:1.05rem; max-width:520px; color:var(--text-secondary);" class="reveal reveal-delay-1">
-          Have a project in mind, a question, or just want to say hello? I'd love to hear from you.
+    <section class="section">
+
+      <h1 class="letter-headline reveal"><em>Write</em> back.</h1>
+
+      <div class="letter-body">
+        <p class="reveal">
+          A project in mind, a question, a job that needs designing — or just hello. I <strong>read every email</strong>, and I try to reply to them all eventually. The form below goes straight to my inbox.
         </p>
       </div>
-    </section>
 
-    <section class="section" style="padding-top:0;">
-      <div class="container">
-        <div class="contact-form-wrap reveal">
-          <form class="contact-form" action="https://formsubmit.co/1f53041c02dc12e84a7253585b9ee4f9" method="POST">
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_subject" value="New Contact Submission from noamelisha.com" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_next" value="https://noamelisha.com/contact.html?sent=1" />
+      <div class="contact-form-wrap reveal reveal-delay-1">
+        <form class="contact-form" action="https://formsubmit.co/1f53041c02dc12e84a7253585b9ee4f9" method="POST">
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_subject" value="New letter from noamelisha.com" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://noamelisha.com/contact.html?sent=1" />
 
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name" required />
-            </div>
+          <div class="form-group">
+            <label for="name">From —</label>
+            <input id="name" name="name" type="text" placeholder="your name" required />
+          </div>
 
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com" required />
-            </div>
+          <div class="form-group">
+            <label for="email">Return address —</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
 
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="6" placeholder="What would you like to talk about?" required></textarea>
-            </div>
+          <div class="form-group">
+            <label for="message">The letter —</label>
+            <textarea id="message" name="message" rows="6" placeholder="what would you like to talk about?" required></textarea>
+          </div>
 
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </form>
-        </div>
+          <button type="submit" class="btn btn-primary">Send →</button>
+        </form>
       </div>
+
+      <div class="signoff reveal" style="margin-top:2.5rem;">
+        Looking for the formal version? <a href="resume.pdf" target="_blank" rel="noopener noreferrer" style="border-bottom:1px solid currentColor;">My resume is here.</a>
+      </div>
+      <div class="signature reveal">
+        <span class="signature-text">Noam</span>
+      </div>
+
     </section>
   </main>
 
+  <!-- ====== FOOTER ====== -->
   <footer>
     <div class="footer-inner">
       <span class="footer-logo">Noam Elisha</span>
@@ -85,8 +101,8 @@
         <a href="https://linkedin.com/in/noam-elisha" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
         </a>
-        <a href="contact.html" class="social-link" aria-label="Contact Form">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="contact.html" class="social-link" aria-label="Contact">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
       </div>
     </div>

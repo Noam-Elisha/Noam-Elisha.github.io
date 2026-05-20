@@ -6,6 +6,18 @@
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// ── Dynamic letter date (e.g. "San Rafael, May 2026") ────────
+const letterDateEls = document.querySelectorAll('[data-letter-date]');
+if (letterDateEls.length) {
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const now = new Date();
+  const dateStr = months[now.getMonth()] + ' ' + now.getFullYear();
+  letterDateEls.forEach(el => {
+    const location = el.getAttribute('data-letter-date') || '';
+    el.textContent = location ? location + ', ' + dateStr : dateStr;
+  });
+}
+
 // ── Navbar scroll effect ──────────────────────
 const navbar = document.getElementById('navbar');
 if (navbar) {
